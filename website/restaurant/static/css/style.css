@@ -59,12 +59,13 @@ ul {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    /*min-height: 100vh;*/
     position: relative; 
+    margin-bottom: 0;
 }
 
 .containerr {
-    flex: 1; 
+   /*flex: 1;*/
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -73,14 +74,14 @@ ul {
     background-color: rgba(120, 12, 12, 0.67);
 }
 
-.slider-item {
-    width: 100%;
+.two{
+    position: relative;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    margin-top: 50px;
+    
+    margin-bottom:200px;
 }
+
 
 .btn {
     background-color: rgb(120, 12, 12);
@@ -98,7 +99,7 @@ ul {
     margin-top: auto;
     background-color: rgba(120, 12, 12, 0.80);
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0; 
 }
 
