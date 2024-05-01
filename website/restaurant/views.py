@@ -26,6 +26,11 @@ def login_user(request):
             messages.error(request, 'There was an error. Please try again.')
     return render(request, 'login.html', {})
 
+def logout_user(request):
+    logout(request)
+    messages.success(request, 'You have been logged out.')
+    return redirect('home')
+
 
 def menu_list(request):
     menu_list = Menu.objects.all()
