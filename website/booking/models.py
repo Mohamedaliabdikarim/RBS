@@ -1,5 +1,6 @@
-from django.db import models
-
+from django.db import models, migrations
+from django.contrib.auth.models import User
+from django.utils import timezone
 
 class Table(models.Model):
     table_number = models.IntegerField(unique=True)
@@ -11,7 +12,7 @@ class Table(models.Model):
 
 
 class Reservation(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)  # Set default user
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)  
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
     number_of_people = models.IntegerField(default=1) 
     date = models.DateField()
@@ -22,3 +23,19 @@ class Reservation(models.Model):
 
     def __str__(self):
         return f"Reservation for {self.table} - {self.date} from {self.start_time} to {self.end_time}"
+
+
+def add_default_user(apps, schema_editor):
+    Reservation = apps.get_model('booking', 'Reservation')
+    User = apps.get_model('auth', 'User')
+    default_user = User.objects.first() 
+    Reservation.objects.filter(user__isnull=True).update(user=user)
+
+class Migration(migrations.Migration):
+    dependencies = [
+        ('booking', 'previous_migration'),  # Replace 'previous_migration' with the actual dependency
+    ]
+    operations = [
+        migrations.RunPython(add_default_user),
+        
+    ]
