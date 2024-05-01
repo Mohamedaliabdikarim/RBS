@@ -10,3 +10,8 @@ urlpatterns = [
      path('register/', views.register_user, name='register'),
 
 ]
+
+
+
+
+

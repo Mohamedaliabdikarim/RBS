@@ -1,10 +1,11 @@
 from django.db import models, migrations
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.core.validators import MinValueValidator
 
 class Table(models.Model):
     table_number = models.IntegerField(unique=True)
-    number_of_people = models.IntegerField()
+    number_of_people = models.IntegerField(validators=[MinValueValidator(0)])
     is_available = models.BooleanField(default=True)
 
     def __str__(self):
@@ -14,7 +15,7 @@ class Table(models.Model):
 class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)  
     table = models.ForeignKey(Table, on_delete=models.CASCADE)
-    number_of_people = models.IntegerField(default=1) 
+    number_of_people = models.IntegerField(validators=[MinValueValidator(0)])
     date = models.DateField()
     start_time = models.TimeField(default=timezone.now)
     end_time = models.TimeField(default=timezone.now)
@@ -33,7 +34,7 @@ def add_default_user(apps, schema_editor):
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('booking', 'previous_migration'),  # Replace 'previous_migration' with the actual dependency
+        ('booking', 'previous_migration'),  
     ]
     operations = [
         migrations.RunPython(add_default_user),

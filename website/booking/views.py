@@ -3,6 +3,7 @@ from .models import Table, Reservation
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
+from .forms import ReservationForm
 
 
 
@@ -64,3 +65,26 @@ def delete_reservation(request, reservation_id):
         messages.error(request, 'Reservation does not exist or you are not authorized to delete it.')
 
     return redirect('home')
+
+
+
+
+@login_required
+def update_reservation(request, reservation_id):
+    try:
+        reservation = Reservation.objects.get(id=reservation_id, user=request.user)
+        if request.method == 'POST':
+            form = ReservationForm(request.POST, instance=reservation)
+            if form.is_valid():
+                form.save()
+                reservation.table.is_available = True  # Assuming you want to mark the table as available after updating the reservation
+                reservation.table.save()
+                messages.success(request, 'Reservation updated successfully.')
+                return redirect('user_reservations')
+        else:
+            form = ReservationForm(instance=reservation)
+    except Reservation.DoesNotExist:
+        messages.error(request, 'Reservation does not exist or you are not authorized to update it.')
+        return redirect('home')
+
+    return render(request, 'update_reservation.html', {'form': form})
