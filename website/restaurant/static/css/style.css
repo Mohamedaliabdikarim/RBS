@@ -5,12 +5,14 @@
 }
 body {
     min-height: 100vh;
-    font-family: "Poppins", sans-serifs;
+    display: flex;
+    flex-direction: column;
     background-image: url("../image/restaurant-boutique-header-bg.jpg");
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    position: relative;
+    
+    font-family: 'Lato', sans-serif;
     
 }
 .header .container-fluid {
@@ -52,4 +54,13 @@ ul {
     background-color: white;
     border: rgb(120, 12, 12);
     border-radius: 20px;
+}
+
+
+
+
+.footer {
+    margin-top: auto;
+    background-color: rgba(120, 12, 12, 0.67);
+
 }
