@@ -82,16 +82,11 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
  # DATABASES = {
   # 'default': dj_database_url.parse('postgres://wtplivds:CeRythqGjOvTabHsWfT_SyCKDCuVmLSi@mouse.db.elephantsql.com/wtplivds')
