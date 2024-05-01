@@ -13,3 +13,43 @@ body {
     position: relative;
     
 }
+.header .container-fluid {
+    margin:0;
+    padding: 10px;
+    background-color: rgb(120, 12, 12);
+    box-shadow: 10px 20px 30px rgb(0, 0, 0);
+    position: relative;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.navbar-brand img {
+    width: 100px;
+    border-radius: 15px;
+
+
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+}
+
+.white:hover {
+    
+    color: rgb(120, 12, 12);
+    background-color: white;
+    border: rgb(120, 12, 12);
+    border-radius: 20px;
+}
