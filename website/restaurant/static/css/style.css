@@ -61,6 +61,13 @@ ul {
 
 .footer {
     margin-top: auto;
-    background-color: rgba(120, 12, 12, 0.67);
+    background-color: rgba(120, 12, 12,.80
+    );
 
+}
+
+.Socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
