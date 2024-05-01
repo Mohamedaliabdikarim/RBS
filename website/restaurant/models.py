@@ -21,3 +21,10 @@ class Menu(models.Model):
     class Meta:
         verbose_name = "Menu"
         verbose_name_plural = "Menus"
+
+
+class Review(models.Model):
+    Name = models.CharField(max_length=100)
+    content = models.TextField()
+    rating = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
