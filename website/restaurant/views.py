@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login,logout
+from django.contrib import messages
+from .models import Menu
 
 
 
@@ -23,3 +25,8 @@ def login_user(request):
             messages.error(request, 'There was an error. Please try again.')
     return render(request, 'login.html', {})
 
+
+def menu_list(request):
+    menu_list = Menu.objects.all()
+    context = {'menu_list': menu_list, }
+    return render(request, 'menu.html',context)

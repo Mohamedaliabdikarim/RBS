@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+    <div class="container">
+        <h1 class="text-center mt-5">Menu List:</h1>
+        <div class="row justify-content-center">
+            {% for menu in menu_list %}
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> <!-- Adjusted column class to be responsive -->
+                <div class="card">
+                    <img src="{{ menu.image.url }}" class="card-img-top" alt="{{ menu.name }}">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ menu.name }}</h2>
+                        <p class="card-text">Price: ${{ menu.price }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock content %}
