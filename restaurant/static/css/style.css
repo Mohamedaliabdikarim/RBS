@@ -56,6 +56,17 @@ ul {
     border-radius: 20px;
 }
 
+main{
+    margin-top: -49px;
+    background-image: url("../image/restaurant-boutique-header-bg.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    
+    
+}
+
 
 .full{
     margin-top: 50px;
@@ -68,6 +79,7 @@ ul {
 }
 
 .containerr {
+    margin-top:50px;
     background-color: rgba(120, 12, 12, 0.67);
      height: 100%;
      width: 100%;
@@ -82,14 +94,6 @@ ul {
 
 
 
-main{
-    background-image: url("../image/restaurant-boutique-header-bg.jpg");
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-bottom: 30px;
-    
-}
 .review{
     margin-bottom:50px;
 }
@@ -145,11 +149,13 @@ p a{
     justify-content: center;
 
 }
+.red{
+    color: rgb(109, 28, 28);
+}
 
 
 .footer {
-   /* margin-top: auto;*/
-    background-color: rgba(120, 12, 12, 0.80);
+    background-color: rgba(120, 12, 12,1);
     width: 100%;
     position: relative;
     bottom: 0; 
