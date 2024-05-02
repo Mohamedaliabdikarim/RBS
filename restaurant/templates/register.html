@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="col-md-6 offset-md-3">
+<div class="container sign-in ">
+<div class="col-md-6 offset-md-3 sign-up">
+    <div class="container menu-list">
     <h1>Register</h1>
+</div>
     <br/>
-    <div class="container containerr">
+    <div class="container sign ">
+    <div class="container">
         <form method="POST" action="">
             {% csrf_token %}
             {% if form.errors %}
@@ -19,8 +23,10 @@
             {% endif %}
             {{ form.as_p }}
             <br/>
-            <button type="submit" class="btn btn-secondary">Register</button>
+            <button type="submit" class="btn btn-secondary register">Register</button>
         </form>
     </div>
+</div>
+</div>
 </div>
 {% endblock content %}
