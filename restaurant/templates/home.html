@@ -21,6 +21,11 @@
   <section class="two">
     <div class="container mt-5">
         <h1 class="red">Reviews</h1>
+        <div class="container review-btn">
+            <a href="{% url 'add_review' %}" class="btn btn-primary px-4 py-3" role="button">Please log in to make a reservation.</a>
+
+        </div>
+
         <div class="row" id="review-cards">
             {% for review in reviews reversed %}
                 <div class="col-md-4 mb-4 review-card{% if forloop.counter > 3 %} d-none{% endif %}">
@@ -42,7 +47,9 @@
             <button id="prev-btn" class="btn btn-primary p-3 px-xl-4 py-xl-3">Previous</button>
             <button id="next-btn" class="btn btn-primary p-3 px-xl-4 py-xl-3{% if reviews|length <= 3 %} d-none{% endif %}">Next</button>
         </div>
+    
     </div>
+
     
 </section>
 

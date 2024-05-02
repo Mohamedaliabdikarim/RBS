@@ -58,7 +58,7 @@ ul {
 
 
 .full{
-    margin-top: 50px;
+    margin-top:50px;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ ul {
 }
 
 .containerr {
+    margin-top: 60px;
     background-color: rgba(120, 12, 12, 0.67);
      height: 100%;
      width: 100%;
@@ -89,6 +90,12 @@ main{
     background-repeat: no-repeat;
     padding-bottom: 30px;
     
+}
+
+.review-btn{
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
 }
 .review{
     margin-bottom:50px;
@@ -149,7 +156,7 @@ p a{
 
 .footer {
    /* margin-top: auto;*/
-    background-color: rgba(120, 12, 12, 0.80);
+    background-color: rgba(120, 12, 12,1);
     width: 100%;
     position: relative;
     bottom: 0; 
