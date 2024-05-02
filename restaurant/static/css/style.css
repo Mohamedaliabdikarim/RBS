@@ -76,7 +76,7 @@ ul {
     flex-direction: column;
     justify-content: center;
      align-items: center;
-     border-radius: 20px;*/
+     border-radius: 20px;
      box-shadow: 30px 30px 40px rgb(0, 0, 1);
      
  }
@@ -98,8 +98,23 @@ main{
     text-align: center;
 }
 .review{
-    margin-bottom:50px;
+    margin-bottom:5
+
 }
+.red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: 
+}
+.review-txt{
+    width: fit-content;
+    background-color: rgba(50, 36, 36, 0.67);
+    border-radius: 20px;
+    
+
+}
+
 
 /*.slider-item {
     width: 100%;
