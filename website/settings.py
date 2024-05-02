@@ -130,11 +130,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'  # Added a forward slash at the end
+STATIC_URL = '/static/'  
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "restaurant", "static"),
+    os.path.join(BASE_DIR, "static"),
 ]
+STATIC_ROOT= os.path.join(BASE_DIR, "static")
 
 
 MEDIA_URL = '/media/'  # Added a forward slash at the end
