@@ -245,6 +245,16 @@ p a{
 .login{margin-top: 50px;
 }
 
+.reserv{
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.Submit{
+    margin: 20px;
+
+}
+
 
 @media screen and (max-width: 768px) {
     .sign-up{
@@ -255,6 +265,18 @@ p a{
         margin-left:110px;
         
     
+    }
+    .log-in {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 55vh;
+    }
+    .reserv{
+       /* height: 100v;*/
+        margin-right: 5px;
+        padding: 10px;
     }
     
     
@@ -274,13 +296,30 @@ p a{
        
     
     }
+    .profile{
+        height: 100vh;
+    }
     .sign-in{
         height: 100vh;
 
     }
+    .log-in {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
     
 
     
+}
+@media screen and (max-width: 992px) {
+    .profile{
+        margin-top:100px;
+        height: 150vh;
+    }
+
 }
 
 /* Media Query for Large Screens */
