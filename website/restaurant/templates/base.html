@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id ="navbar"class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}">
           <img src="{% static 'image/logo(1).svg' %}" alt="logo">
@@ -62,12 +62,13 @@
 
 
 
+<main>
 
-
-
-    {% block content %}
+  {% block content %}
     
-    {% endblock content %}
+  {% endblock content %}
+</main>
+  
 
 
     <footer class="footer text-white py-4">

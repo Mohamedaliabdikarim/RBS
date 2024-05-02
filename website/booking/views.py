@@ -7,6 +7,7 @@ from .forms import ReservationForm
 
 
 
+
 @login_required
 def user_reservations(request):
     user = request.user
@@ -88,3 +89,5 @@ def update_reservation(request, reservation_id):
         return redirect('home')
 
     return render(request, 'update_reservation.html', {'form': form})
+
+

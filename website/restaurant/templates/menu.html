@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
+
 {% block content %}
-   
+<section class="two">
     <div class="container">
         <h1 class="text-center mt-5">Menu List:</h1>
         <div class="row justify-content-center">
             {% for menu in menu_list %}
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4"> <!-- Adjusted column class to be responsive -->
+            <div id = "menu"class="col-lg-3 col-md-4 col-sm-6 mb-4"> 
                 <div class="card">
                     <img src="{{ menu.image.url }}" class="card-img-top" alt="{{ menu.name }}">
                     <div class="card-body">
@@ -18,5 +19,6 @@
             {% endfor %}
         </div>
     </div>
+    </section>
     
 {% endblock content %}
