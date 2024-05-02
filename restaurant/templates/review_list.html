@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+
+<div class="container mt-5">
+    <h1>Reviews</h1> <button class="btn">hei hei hei</button>
+    <div class="row" id="review-cards">
+        {% for review in reviews %}
+            <div class="col-md-4 mb-4 review-card{% if forloop.counter > 3 %} d-none{% endif %}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ review.author }}</h5>
+                        <p class="card-text">{{ review.content }}</p>
+                        <p class="card-text">Rating: 
+                            {% for _ in "x"|rjust:review.rating %}
+                                <i class="fas fa-star"></i>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="text-center mt-3">
+        <button id="prev-btn" class="btn">Previous</button>
+
+        
+        <button id="next-btn" class="btn btn-primary{% if reviews|length <= 3 %} d-none{% endif %}">Next</button>
+    </div>
+</div>
+{% endblock content %}
