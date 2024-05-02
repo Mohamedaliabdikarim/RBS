@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     
     
 }
@@ -235,6 +235,16 @@ p a{
 .register{
     margin: 20px;
 }
+.log-in {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+.login{margin-top: 50px;
+}
+
 
 @media screen and (max-width: 768px) {
     .sign-up{

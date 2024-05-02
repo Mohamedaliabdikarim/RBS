@@ -32,8 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['rbs-6abef8d317f3.herokuapp.com']
 
-#rbs-6abef8d317f3.herokuapp.com
-
+#'rbs-6abef8d317f3.herokuapp.com'
 
 # Application definition
 
