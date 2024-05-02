@@ -80,9 +80,10 @@ ul {
      
  }
 
-
+/* jeg må lage noe her*/
 
 main{
+    margin-top: -49px;
     background-image: url("../image/restaurant-boutique-header-bg.jpg");
     background-position: center;
     background-size:cover;
