@@ -254,6 +254,12 @@ p a{
     margin: 20px;
 
 }
+.error{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
 
 
 @media screen and (max-width: 768px) {

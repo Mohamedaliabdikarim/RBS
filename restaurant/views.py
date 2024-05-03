@@ -94,3 +94,5 @@ def add_review(request):
 def review_list(request):
     reviews = Review.objects.all()
     return render(request, 'review_list.html', {'reviews': reviews})
+
+
