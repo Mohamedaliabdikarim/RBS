@@ -170,7 +170,12 @@ p a{
     justify-content: center;
 
 }
-
+.add {
+    margin-top: 100px;
+}
+.name{
+    color: whitesmoke;
+}
 
 .footer {
    /* margin-top: auto;*/
@@ -198,6 +203,10 @@ p a{
     }
     .card-text{
         font-size: 20px;
+    }
+
+    .add {
+        margin-top: 140px;
     }
     
     
@@ -261,6 +270,10 @@ p a{
 
 }
 
+.Details{
+    margin-top:250px;
+}
+
 
 @media screen and (max-width: 768px) {
     .sign-up{
@@ -316,14 +329,21 @@ p a{
         width: 100%;
         height: 100vh;
     }
+
+    .add {
+        margin-top: 180px;
+    }
     
 
     
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .profile{
         margin-top:100px;
         height: 150vh;
+    }
+    .add {
+        margin-top: 200px;
     }
 
 }
