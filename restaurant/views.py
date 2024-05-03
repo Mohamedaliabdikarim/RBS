@@ -45,7 +45,7 @@ def register_user(request):
 		form = SignUpForm(request.POST)
 		if form.is_valid():
 			form.save()
-			# Authenticate and login
+			
 			username = form.cleaned_data['username']
 			password = form.cleaned_data['password1']
 			user = authenticate(username=username, password=password)
@@ -64,31 +64,31 @@ def add_review(request):
         content = request.POST.get('content')
         rating = request.POST.get('rating')
 
-        # Perform basic validation
+        
         if not author or not content or not rating:
-            # If any of the fields are missing, return with an error message
+            
             return render(request, 'add_review.html', {'error_message': 'All fields are required.'})
 
-        # Convert rating to integer
+        
         try:
             rating = int(rating)
             if rating < 1 or rating > 5:
-                # Rating should be between 1 and 5
+                
                 return render(request, 'add_review.html', {'error_message': 'Rating should be between 1 and 5.'})
         except ValueError:
-            # If rating is not a valid integer, return with an error message
+            
             return render(request, 'add_review.html', {'error_message': 'Rating should be a number.'})
 
-        # Create the review
+        
         try:
             Review.objects.create(author=author, content=content, rating=rating)
-            # Redirect to the review list after successful creation
+           
             return redirect('home')
         except Exception as e:
-            # If any other error occurs during creation, return with an error message
+            
             return render(request, 'add_review.html', {'error_message': f'An error occurred: {str(e)}'})
 
-    # If request method is not POST, render the form
+    
     return render(request, 'add_review.html')
 
 def review_list(request):

@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from .forms import ReservationForm
+from django.utils import timezone
 
 
 
@@ -18,29 +19,51 @@ def user_reservations(request):
 @login_required
 def make_reservation(request):
     if request.method == 'POST':
-        user = request.user
-        number_of_people = request.POST.get('number_of_people')
-        date = request.POST.get('date')
-        start_time = request.POST.get('start_time')
-        end_time = request.POST.get('end_time')
-        name = request.POST.get('name')
-        email = request.POST.get('email')
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            user = request.user
+            number_of_people = form.cleaned_data['number_of_people']
+            date = form.cleaned_data['date']
+            start_time = form.cleaned_data['start_time']
+            end_time = form.cleaned_data['end_time']
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
 
-        
-        available_tables = Table.objects.filter(number_of_people=number_of_people, is_available=True)
-        if available_tables.exists():
-            table = available_tables.first()
+            
+            if date < timezone.now().date():
+                messages.error(request, 'Reservation date cannot be in the past.')
+                return redirect('make_reservation')
 
-           
-            reservation = Reservation.objects.create(user=user, table=table, number_of_people=number_of_people, date=date, start_time=start_time, end_time=end_time, name=name, email=email)
-
-            reservation_url = f'/reservation/{reservation.id}/'
-            return redirect(reservation_url)
+            
+            existing_reservation = Reservation.objects.filter(table__number_of_people=number_of_people,
+                                                              table__is_available=True,
+                                                              date=date,
+                                                              start_time__lt=end_time,
+                                                              end_time__gt=start_time)
+            if existing_reservation.exists():
+                messages.error(request, 'The selected table is already booked for the specified time.')
+                return redirect('make_reservation')
+            else:
+                with transaction.atomic():
+                    
+                    available_table = Table.objects.filter(number_of_people=number_of_people, is_available=True).first()
+                    if available_table:
+                        
+                        reservation = Reservation.objects.create(user=user, table=available_table,
+                                                                 number_of_people=number_of_people,
+                                                                 date=date, start_time=start_time,
+                                                                 end_time=end_time, name=name, email=email)
+                        reservation_url = f'/reservation/{reservation.id}/'
+                        return redirect(reservation_url)
+                    else:
+                        messages.error(request, 'No available table for the specified number of people.')
+                        return redirect('make_reservation')
         else:
-            messages.error(request, 'No available table for the specified number of people.')
+            messages.error(request, 'Invalid form data. Please check your input.')
             return redirect('make_reservation')
     else:
-        return render(request, 'make_reservation.html')
+        form = ReservationForm()
+        return render(request, 'make_reservation.html', {'form': form})
 
 @login_required
 def reservation_detail(request, reservation_id):
@@ -78,7 +101,7 @@ def update_reservation(request, reservation_id):
             form = ReservationForm(request.POST, instance=reservation)
             if form.is_valid():
                 form.save()
-                reservation.table.is_available = True  # Assuming you want to mark the table as available after updating the reservation
+                reservation.table.is_available = True  
                 reservation.table.save()
                 messages.success(request, 'Reservation updated successfully.')
                 return redirect('user_reservations')

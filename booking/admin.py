@@ -3,7 +3,7 @@ from .models import Table, Reservation
 
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
-    list_display = ('table_number', 'number_of_people')  # Corrected 'number_of_pealpe' to 'number_of_people'
+    list_display = ('table_number', 'number_of_people') 
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
