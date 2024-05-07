@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     
     
 }
@@ -212,6 +212,9 @@ p a{
     
 
 }
+.profile{
+    height: 100vh;
+}
 
 .menu{
     padding-top: 50px;
@@ -253,7 +256,12 @@ p a{
 }
 .login{margin-top: 50px;
 }
-
+.signup-btn{
+    color: whitesmoke;
+    width: fit-content;
+    background-color: rgba(50, 36, 36, 0.67);
+    border-radius: 20px
+}
 .reserv{
     margin-right: 5px;
     padding: 10px;
@@ -345,7 +353,7 @@ p a{
 @media screen and (max-width: 1200px) {
     .profile{
         margin-top:100px;
-        height: 150vh;
+        height: 100vh;
     }
     .add {
         margin-top: 200px;
