@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary_storage
 
 
 
@@ -30,7 +31,7 @@ SECRET_KEY = 'django-insecure-x$ydio8xd+_!liftefxcq$0h!l@zpds6@%lwqyz9wqp3xf+y-p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rbs-6abef8d317f3.herokuapp.com']
+ALLOWED_HOSTS = ['rbs-6abef8d317f3.herokuapp.com','localhost']
 
 #'rbs-6abef8d317f3.herokuapp.com'
 
@@ -45,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'restaurant',
     'booking',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +153,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'djkorqmgp',
+    'API_KEY': '374877945334816',
+    'API_SECRET': 'mYU9x93kZOVO2aLD1HueDTKaGQ4'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+

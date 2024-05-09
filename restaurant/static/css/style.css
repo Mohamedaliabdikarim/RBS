@@ -39,9 +39,6 @@ ul {
 
 
 }
-/*#row {
-    width: 85%;
-}*/
 
 .white {
     color: white;
@@ -83,7 +80,7 @@ ul {
      box-shadow: 30px 30px 40px rgb(0, 0, 1);
      
  }
-/* den første*/
+
 
 main{
     margin-top: -49px;
@@ -119,10 +116,6 @@ main{
 }
 
 
-/*.slider-item {
-    width: 100%;
-    height: auto;
-  }*/
 
 
 .two{
@@ -259,6 +252,7 @@ p a{
 .signup-btn{
     color: whitesmoke;
     width: fit-content;
+    padding: 15px;
     background-color: rgba(50, 36, 36, 0.67);
     border-radius: 20px
 }
