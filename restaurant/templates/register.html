@@ -6,8 +6,8 @@
     <h1>Register</h1>
 </div>
     <br/>
-    <div class="container sign ">
-    <div class="container">
+    <!--<div class="container sign ">-->
+    <div class="container sign">
         <form method="POST" action="">
             {% csrf_token %}
             {% if form.errors %}
@@ -26,7 +26,7 @@
             <button type="submit" class="btn btn-secondary register">Register</button>
         </form>
     </div>
-</div>
+<!--</div>-->
 </div>
 </div>
 {% endblock content %}
