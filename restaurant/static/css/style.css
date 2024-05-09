@@ -171,7 +171,7 @@ p a{
 }
 
 .footer {
-   /* margin-top: auto;*/
+    margin-top: auto;
     background-color: rgba(120, 12, 12,1);
     width: 100%;
     position: relative;
@@ -221,7 +221,8 @@ p a{
 
 }
 .sign-up{
-    padding-top: 70px;
+    margin-bottom: 30px;
+    padding-top: 70px
 }
 .sign{
     padding-top: 25px;
@@ -240,14 +241,17 @@ p a{
 .register{
     margin: 20px;
 }
+
 .log-in {
     position: relative;
-    top: 0;
+    /*top: 0;*/
     left: 0;
     width: 100%;
-    height: 50vh;
+   height: 100vh;
 }
 .login{margin-top: 50px;
+    height: 100vh;
+
 }
 .signup-btn{
     color: whitesmoke;
@@ -285,6 +289,7 @@ p a{
         justify-content: center;
         width: 75%;
         margin-left:110px;
+        height: ;
         
     
     }
@@ -329,12 +334,9 @@ p a{
         height: 100vh;
 
     }
-    .log-in {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
+    .login {
+        margin: px;
+        padding-top: 70px;
     }
 
     .add {
