@@ -1,39 +1,58 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+# Resturantly
 ---
 
-Happy coding!
+Introducing Restaurantly, a digital haven for food enthusiasts seeking a delightful dining experience. Embark on a culinary journey like no other as you explore our meticulously crafted menus, brimming with tantalizing flavors and exquisite dishes. Whether you're craving comforting classics or adventurous culinary creations, Restaurantly promises to satisfy your palate with an array of mouthwatering options.
+But Restaurantly is more than just a menu showcase. It's a vibrant community hub where patrons can share their gastronomic adventures, leaving behind insightful reviews and recommendations to guide fellow food adherents. Dive into a sea of culinary insights, discovering hidden gems and must-try delicacies curated by our passionate community of diners.
+And that's not all. With Restaurantly, booking a table is as effortless as a few clicks. Simply sign up and log in to reserve your spot at your favorite eateries, ensuring a seamless dining experience from start to finish. Say goodbye to waiting in long queues or struggling to secure a reservation – with Restaurantly, your table awaits, ready to host your next unforgettable dining escapade.
+So whether you're planning a romantic dinner for two or a celebratory feast with friends, let Restaurantly be your trusted companion in the pursuit of culinary excellence. Join us today and embark on a culinary adventure like never before
+
+# Project
+
+## objectives
+The genesis of Restaurantly sprang from a personal odyssey intertwined with my fervor for culinary exploration and fostering community connections. Transitioning from a recreational pursuit to a dedicated developer, I found myself immersed in the realm of gastronomy, spurred on by my children's engagement in local activities.
+Observing the hurdles encountered by individuals seeking compatible partners for various endeavors, I discerned an opportunity to apply my technical proficiency to bridge this gap. Inspired by the seamless functionality of online booking systems, I envisioned a platform that merges the convenience of digital reservations with the conviviality of a thriving culinary community.
+With Restaurantly, my foremost aim was to leverage my expertise in HTML, CSS, JavaScript, Python, Bootstrap, and the Django Framework to craft a dynamic digital space that enhances the dining experience while fostering meaningful connections within the gastronomic landscape. Though the initial implementation may not have fully realized the aspirations for certain features, I am dedicated to refining and iterating upon them in subsequent versions.
+Ultimately, Restaurantly aspires to redefine the way patrons engage with dining establishments, offering a seamless fusion of culinary discovery, reservation convenience, and communal interaction. As I continue to enhance the platform, my unwavering objective remains: to equip food enthusiasts with a comprehensive toolkit for navigating the rich and diverse world of culinary experiences.
+
+### Site User's Goal:
+Website User´s goal
+
+Aim to enjoy a hassle-free and convenient dining experience, where they can effortlessly browse menus, make reservations, and access essential information about restaurants.
+### Site Owner's Goal
+
+A primary objective is to drive business growth for participating restaurants by increasing their visibility, attracting new customers, and facilitating repeat costumer, by offering compelling features, such as interactive menus, review functionalities, and community forums, to keep users coming back to the platform.
+
+# User Experience (UX)
+---
+
+## Primary Goal
+The primary objective of this application is to enable registered customers to book tables for their dining experience at our restaurant
+
+
+### Visitor Goals
+As a visitor to the  restaurant's website, you can effortlessly make reservations for a convenient dining time.
+
+#### First Time Visitor
+
+    Explore the three main features of our website: Find a table, Make a reservation, Contact us.
+    Register, log in, and log out seamlessly.
+    View table availability and details of available tables.
+    Access buddy profiles on the "Find the Perfect Buddy" page.
+    See buddy details, including contact information, upon signing in.
+    Utilize the search bar to find a buddy when on the "Find the Perfect Buddy" tab.
+    Click on a buddy card to view their details and contact them via email.
+    Browse the booking calendar and check court availability.
+    Make reservations directly from the booking calendar page with pre-filled date, time, and table information.
+    Choose opponents for the reservation, with the option to select up to three players.
+    Receive notifications if the correct number of opponents is not selected.
+    Receive confirmation of successful bookings and access to past reservation history.
+    Manage contact information easily from the Profile Icon (Contact Info).
+    Add, edit, or delete buddy information from the Profile Icon (Profile).
+    View and manage your bookings under the Profile Icon (Your Bookings).
+    Contact us easily through a contact form.
+    Locate the restaurant's address on the Contact Us page.
+    Access useful information in the footer, including links to social media, opening hours, site navigation, recommendations for improvement, and contact information.
+
+
+
+

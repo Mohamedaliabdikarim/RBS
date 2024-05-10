@@ -31,7 +31,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = FALSE
+
 
 ALLOWED_HOSTS = ['rbs-6abef8d317f3.herokuapp.com','localhost']
 
