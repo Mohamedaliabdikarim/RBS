@@ -1,10 +1,16 @@
+![](readme-images/responsiv.png)
+
+
+
 # Resturantly
 ---
 
 Introducing Restaurantly, a digital haven for food enthusiasts seeking a delightful dining experience. Embark on a culinary journey like no other as you explore our meticulously crafted menus, brimming with tantalizing flavors and exquisite dishes. Whether you're craving comforting classics or adventurous culinary creations, Restaurantly promises to satisfy your palate with an array of mouthwatering options.
 But Restaurantly is more than just a menu showcase. It's a vibrant community hub where patrons can share their gastronomic adventures, leaving behind insightful reviews and recommendations to guide fellow food adherents. Dive into a sea of culinary insights, discovering hidden gems and must-try delicacies curated by our passionate community of diners.
 And that's not all. With Restaurantly, booking a table is as effortless as a few clicks. Simply sign up and log in to reserve your spot at your favorite eateries, ensuring a seamless dining experience from start to finish. Say goodbye to waiting in long queues or struggling to secure a reservation – with Restaurantly, your table awaits, ready to host your next unforgettable dining escapade.
-So whether you're planning a romantic dinner for two or a celebratory feast with friends, let Restaurantly be your trusted companion in the pursuit of culinary excellence. Join us today and embark on a culinary adventure like never before
+So whether you're planning a romantic dinner for two or a celebratory feast with friends, let Restaurantly be your trusted companion in the pursuit of culinary excellence. Join us today and embark on a culinary adventure like never before.
+You can access the Restaurantl app [here](https://rbs-6abef8d317f3.herokuapp.com/).
+
 
 # Project
 
@@ -34,24 +40,45 @@ As a visitor to the  restaurant's website, you can effortlessly make reservation
 
 #### First Time Visitor
 
-    Explore the three main features of our website: Find a table, Make a reservation, Contact us.
-    Register, log in, and log out seamlessly.
-    View table availability and details of available tables.
-    Access buddy profiles on the "Find the Perfect Buddy" page.
-    See buddy details, including contact information, upon signing in.
-    Utilize the search bar to find a buddy when on the "Find the Perfect Buddy" tab.
-    Click on a buddy card to view their details and contact them via email.
-    Browse the booking calendar and check court availability.
-    Make reservations directly from the booking calendar page with pre-filled date, time, and table information.
-    Choose opponents for the reservation, with the option to select up to three players.
-    Receive notifications if the correct number of opponents is not selected.
-    Receive confirmation of successful bookings and access to past reservation history.
-    Manage contact information easily from the Profile Icon (Contact Info).
-    Add, edit, or delete buddy information from the Profile Icon (Profile).
-    View and manage your bookings under the Profile Icon (Your Bookings).
-    Contact us easily through a contact form.
-    Locate the restaurant's address on the Contact Us page.
-    Access useful information in the footer, including links to social media, opening hours, site navigation, recommendations for improvement, and contact information.
+   -  Explore the three main features of our website: Find a table, Make a reservation.
+   - Users can sign in and reserve tables
+   -  Register, log in, and log out seamlessly.
+  -  A user can view their profile and manage reservations by updating or deleting them.
+
+
+#### Returning Visitor
+
+- Signing in allows users convenient access to the majority of the website's features
+
+
+### User Stories
+- As a customer, I can visit the homepage of my favorite restaurant so that I can view the services provided.
+
+- As a registered user, I want to easily sign in to my account to access the website's features and options seamlessly.
+- As a user, I can easily locate the navigation area no the website so that I can access different parts of it without hassle.
+
+- As a user, I can view the menu
+
+- As a logged-in user, I want the ability to log out of my account to maintain its privacy and security.
+
+- As a diner, I can edit my reservation to update my booking details.
+
+- As a diner, I can read and add reviews for the restaurant
+- As a user I can enter my personal details so that I can create an account with on the webside and be contacted in case of need
+- As a customer, when I land on the login page directly, I can see a visible signup button so that I can easily create a new account if I'm not already registered
+
+- As a registered diner, I can make a reservations for table so that I can So that I can secure a spot for dining at the restaurant.
+
+- As a registered diner, I can cancel my table reservation so that I can free up the table and inform the restaurant.
+
+- As a guest user, I want to register on the website to access its functionality and content.
+
+- As a registered diner, I can cancel my table reservation so that I can free up the table and inform the restaurant.
+
+
+# Creation Process
+
+
 
 
 
