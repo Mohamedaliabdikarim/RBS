@@ -78,6 +78,143 @@ As a visitor to the  restaurant's website, you can effortlessly make reservation
 
 # Creation Process
 
+In setting up my restaurant's online presence, I aimed for a user-friendly platform that would make booking easy and enhance the dining experience. Inspired by successful restaurant websites, I worked on creating a digital space that mirrored the vibe of my establishment.
+
+I paid close attention to detail, focusing on features like simple reservation systems and appealing menu displays. Each step of the development process aimed to make the online experience as smooth and enjoyable as dining in person.
+
+With each improvement, I kept the goal of providing top-notch service at the forefront. My restaurant's website became more than just a tool; it became a reflection of our commitment to delivering a memorable dining experience, whether online or in-person.
+
+The wireframes encompass desktop, tablet, and mobile views with responsiveness in mind. Most basic pages maintain consistency across all devices (such as sign-in, sign-up, logout, forms, etc.). However, for those with varying layouts on smaller screens, I developed sample wireframes. The primary distinction on smaller screens is a condensed NavBar, accessed through a hamburger icon, and a footer where items stack vertically. Additionally, the display of tennis buddies and other pertinent features adjusts based on screen size.
+
+[Figma](https://www.figma.com) proved invaluable for crafting these wireframes.
+
+<details>
+<summary> Home Page </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Menu </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Sign Up </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Login </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Profile </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Make a reservation </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+<details>
+<summary> Reservation Details</summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+
+## Project Management
+
+Due to time constraints, I didn't have the opportunity to utilize multiple sprints for my project. However, I made the most of the time available to me, leveraging GitHub Projects for organization, tracking user stories, and managing epics. This tool proved indispensable, allowing me to centralize all Product Backlog Items (PBIs) and approach them methodically.
+
+Initially, I dedicated significant effort to project planning, meticulously crafting wireframes and model sketches. These served as essential references throughout the project, guiding me through each step. As I progressed, I documented PBIs, Epics, and User Stories, transitioning to the Kanban board in GitHub Projects for seamless organization. Milestones were used to delineate the project's progress and serve as sprint markers, despite only having one sprint due to time constraints.
+
+In the absence of multiple sprints, I approached each task strategically, prioritizing essential features while keeping the Minimum Viable Product (MVP) in mind. This involved ensuring backend functionality was robust before incorporating additional features. Despite the limitations on sprint iterations, I remained adaptable, adjusting plans as needed to accommodate unforeseen challenges or complexities, such as those encountered during the implementation of the booking system.
+
+Breaking the project into Epics, User Stories, and tasks proved invaluable, enabling me to manage the workload effectively. Each user story was meticulously labeled and categorized, ensuring clarity and prioritization. Acceptance criteria were established for each user story, guiding the definition of completion and facilitating thorough task fulfillment.
+
+While the project's timeline was constrained, the focus remained on delivering a high-quality product within the given parameters. This necessitated careful prioritization, strategic decision-making, and a flexible approach to project management. Despite the challenges posed by limited time, the experience gained serves as a valuable lesson in efficient project execution and adaptation to constraints.
+
+## Moscow Prioritization
+
+I attempted to implement MoSCoW principles in my development approach, albeit more at a project level rather than within specific sprints. Initially, my primary focus was on fulfilling must-have user stories during the early stages of development. Once the core features were adequately implemented, I began integrating should-haves and could-haves into the project. Additionally, as I progressed, I identified won't-haves, which were either abandoned entirely or earmarked for future iterations of development.
+
+- Must Have: must be delivered (max 60% of user stories)
+- Should Have: add significant value, but not crucial (20% of stories)
+- Could Have: small impact if not implemented (20% of stories)
+- Won't Have: not crucial for this iteration
+
+## Site Structure
+The website's appearance adjusts based on the user's sign-in status. When not signed in, users can view Register/Login buttons, while signed-in users can access Profile/Logout buttons.
+## Design Choices
+To enhance simplicity and attractiveness, the website was designed with a focus on clarity. The color palette was deliberately restrained.
+
+
+## Color Scheme
+
+Regarding the color scheme, typically I would rely on a color scheme or wheel. However, in this instance, I utilized the color code rgb(120, 12, 12) predominantly throughout the site. The only deviation from this was adjusting the color of the pop-up messages to harmonize with this chosen palette.
+
+## Typography
+Initially, I intended to modify the default font type provided. However, after experimenting with various fonts, I found that the original Bootstrap font suited the design well. Consequently, I decided against making any alterations to the font selection.
+
+
+## Features
+
+#### Responsive Navigation Bar
+![](readme-images/responsiv.png)
+
+The site features a straightforward yet efficient NavBar that facilitates user navigation. It includes the following links:
+
+- logo
+
+- Home Page
+- Menu
+- sign up
+- login
+- profile
+- make a reservation
+- logout
+
+
+![](readme-images/responsiv.png)
+
+<details>
+<summary> Hamburger Open </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+## Home Page
+
+
+
+
+
+
 
 
 

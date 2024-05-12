@@ -54,7 +54,7 @@ ul {
 }
 
 
-.full{
+.full {
     margin-top:50px;
     width:100%;
     display: flex;
@@ -264,7 +264,7 @@ p a{
     border-radius: 20px
 }
 .reserv{
-    margin-right: 5px;
+    margin-right: px;
     padding: 10px;
 }
 
@@ -356,6 +356,9 @@ p a{
     }
     .add {
         margin-top: 200px;
+    }
+    .reserv{
+        height: 100vh;
     }
 
 }
