@@ -1,35 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="full">
-
-<<div class="container mt-5">
-  <div class="container review-txt">
-  <h1>Add Review</h1>
-</div>
-  <form method="post">
-    {% csrf_token %}
-    <div class="form-group add">
-      <label class = "name"for="author">NAME</label>
-      <input type="text" class="form-control" id="author" name="author">
+  <div class="container mt-5">
+    <div class="container review-txt">
+      <h1>Add Review</h1>
     </div>
-    <div class="form-group">
-      <label for="content" class = "name"> Content</label>
-      <textarea class="form-control" id="content" name="content" rows="5"></textarea>
-    </div>
-    <div class="form-group" class = "name">
-      <label class = "name" for="rating" >Rating</label>
-      <select class="form-control" id="rating" name="rating">
-        <option value="1">&#9733;</option>
-        <option value="2">&#9733;&#9733;</option>
-        <option value="3">&#9733;&#9733;&#9733;</option>
-        <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
-        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
-</div>
-</div>
+    <form method="post">
+      {% csrf_token %}
+      <div class="form-group add">
+        <label class="name" for="author">NAME</label>
+        <input type="text" class="form-control" id="author" name="author">
+      </div>
+      <div class="form-group">
+        <label for="content" class="name">Content</label>
+        <textarea class="form-control" id="content" name="content" rows="5"></textarea>
+      </div>
+      <div class="form-group name">
+        <label class="name" for="rating">Rating</label>
+        <select class="form-control" id="rating" name="rating">
+          <option value="1">&#9733;</option>
+          <option value="2">&#9733;&#9733;</option>
+          <option value="3">&#9733;&#9733;&#9733;</option>
+          <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+          <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </section>
 {% endblock content %}
