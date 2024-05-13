@@ -11,7 +11,7 @@ class Menu(models.Model):
     slug = models.SlugField(blank=True, null=True)
 
     def save(self, *args, **kwargs):
-        # Generate slug based on the name
+        
         if not self.slug and self.name:
             self.slug = slugify(self.name)
         super(Menu, self).save(*args, **kwargs)

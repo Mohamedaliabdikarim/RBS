@@ -30,12 +30,14 @@ def make_reservation(request):
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
 
-            
             if date < timezone.now().date():
                 messages.error(request, 'Reservation date cannot be in the past.')
                 return redirect('make_reservation')
 
-            
+            if end_time <= start_time:
+                messages.error(request, 'End time must be after start time.')
+                return redirect('make_reservation')
+
             existing_reservation = Reservation.objects.filter(table__number_of_people=number_of_people,
                                                               table__is_available=True,
                                                               date=date,
@@ -46,10 +48,8 @@ def make_reservation(request):
                 return redirect('make_reservation')
             else:
                 with transaction.atomic():
-                    
                     available_table = Table.objects.filter(number_of_people=number_of_people, is_available=True).first()
                     if available_table:
-                        
                         reservation = Reservation.objects.create(user=user, table=available_table,
                                                                  number_of_people=number_of_people,
                                                                  date=date, start_time=start_time,
@@ -65,6 +65,10 @@ def make_reservation(request):
     else:
         form = ReservationForm()
         return render(request, 'make_reservation.html', {'form': form})
+
+
+
+
 
 @login_required
 def reservation_detail(request, reservation_id):
