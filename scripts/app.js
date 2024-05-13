@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         prevBtn.classList.remove('d-none'); 
     }
 
-    function showPreviousReviews() { /
+    function showPreviousReviews() {
         for (var i = nextIndex - 1; i >= nextIndex - 3; i--) {
             if (reviewCards[i]) {
                 reviewCards[i].classList.add('d-none');
