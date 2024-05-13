@@ -91,7 +91,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Home Page </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/figma-home.png)
 
 
 </details>
@@ -99,7 +99,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Menu </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/figma-menu.png)
 
 
 </details>
@@ -107,7 +107,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Sign Up </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/figma-sign.up.png)
 
 
 </details>
@@ -115,7 +115,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Login </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/figma-login.png)
 
 
 </details>
@@ -123,7 +123,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Profile </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/figma-profile.png)
 
 
 </details>
@@ -131,15 +131,7 @@ The wireframes encompass desktop, tablet, and mobile views with responsiveness i
 <details>
 <summary> Make a reservation </summary>
 
-![](readme-images/responsiv.png)
-
-
-</details>
-
-<details>
-<summary> Reservation Details</summary>
-
-![](readme-images/responsiv.png)
+![](readme-images/figma-make-resc.png)
 
 
 </details>
@@ -208,7 +200,327 @@ The site features a straightforward yet efficient NavBar that facilitates user n
 
 </details>
 
-## Home Page
+## Home Page'
+
+## Menu
+
+### sign Up
+
+### login
+
+### Profile
+
+### add review
+
+### Make A reservation
+
+### logout
+
+### Reservation Details
+
+### Update Reservation
+
+
+### Delete
+
+
+# Technologies Used
+
+### Languages
+
+-  Python - adds functionality.
+ - HTML - provides content and structure.
+- CSS - styles the website.
+- JavaScript - JavaScript makes it interactive.
+
+
+### Frameworks and Software
+
+
+
+- Bootstrap - A CSS framework for building responsive, mobile-first websites.
+
+- Django - The MVT (Model-View-Template) framework used to create the website.
+- Figma - Used to create wireframes.
+- Github - hosting the repository.
+- Projects in GitHub - Used for project managament.
+- Heroku -  deploying the application.
+- VS code  -  for developing the application.
+- Favicon Converter - used to create a favicon in correct format.
+- Lighthouse - Used to test performance of site.
+- Responsive Design Checker - Used for responsiveness check.
+- Google Chrome DevTools - for debuggin and test responsiveness.
+- Cloudinary - for hosting all static files in the project.
+- HTML Validation -  validate HTML code
+- CSS Validation -  validate CSS code
+
+
+# Python Packages
+
+Here are the packages and libraries installed and listed in the requirements.txt file:
+
+- asgiref==3.8.1
+- cloudinary==1.40.0
+- dj-database-url==2.1.0
+- Django==5.0.4
+- django-cloudinary-storage==0.3.0
+- gunicorn==22.0.0
+- pillow==10.3.0
+- psycopg2==2.9.9
+- python-decouple==3.8
+- sqlparse==0.5.0
+- whitenoise==6.6.0
+
+### Install Django and the supporting libraries
+For installing Django and its supporting libraries, execute the following commands:
+
+- pip3 install 'django<4' gunicorn
+- pip3 install dj_database_url psycopg2
+- pip3 install dj3-cloudinary-storage
+
+Once Django and its accompanying libraries are installed, the next step is to create a requirements file.
+
+- pip3 freeze --local > requirements.txt - This process will generate and incorporate the necessary libraries into a requirements.txt file.
+
+<details>
+<summary>  requirements.txt file </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+Create the project.
+
+- django-admin startproject YOUR_PROJECT_NAME . - This will create your project
+
+<details>
+<summary>  Create Project </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+When the project is created, we create the application.
+- django-admin startapp APP_NAME - This will create your application
+
+<details>
+<summary>  Create Application </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+-  To create a superuser type in the following code: python3 manage.py createsuperuser
+
+- To create a superuser type in the following code: python3 manage.py createsuperuser
+ -   You will be asked to enter credentials after which the superuser is created
+
+We now need to add the application to settings.py
+
+<details>
+<summary> Add Application to settings.py </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+
+Now do your first migration and run the server to test that everything works as expected. This is done by writing the commands below.
+
+
+
+- python3 manage.py migrate - This will migrate the changes.
+- python3 manage.py runserver - This runs the server. To test it, click the 'open browser' button that will be visible after the command is run.
+
+Create env.py file at the root level and include the following environment variables. Don't forget to add the env.py file in the .gitignore in order to keep your secret information from becoming unsafe:
+
+SECRET_KEY=ih%(k2k!!h_4k8wbfa=wd!-m9%tq@sqo7((*$7bd_r01vu-@nv)))
+
+from pathlib import Path
+import os
+import cloudinary_storage
+from decouple import config
+
+Add Cloudinary Libraries to the "INSTALLED_APPS" in the following order (the order must be adhered to):
+
+<details>
+<summary> Add Application to settings.py </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+# ElephantSQL Database
+
+ElephantSQL is used for the  heroku's PostgreSQL database in this project.
+
+To create your own PostgreSQL database on Heroku for your project:
+
+- Go to the Heroku dashboard.
+- Navigate to your project.
+- Find and click on the "Resources" tab.
+- In the "Add-ons" section, search for "Heroku PostgresSQL".
+- Select the appropriate option from the search results.
+- Click on the add-on to open it.
+- Inside the Heroku PostgreSQL add-on dashboard, navigate to the "Settings" or "Details" tab.
+- You should find the connection details such as the database URL, username, and password.
+- Make note of these details for use in configuring your application.
+- Your PostgreSQL database is now set up and ready to be used in your Heroku project.
+
+# Cloudinary API
+Cloudinary API is used to store media assets online
+# Heroku Deployment
+To deploy the project to Heroku, please follow these steps:
+
+ - Sign up/Login to Heroku: If you haven't already, sign up for a Heroku account and log in to the dashboard.
+
+- Install Heroku CLI (Command Line Interface): If you haven't installed the Heroku CLI, download and install it from the official Heroku website.
+
+- Prepare your Project: Ensure your project is ready for deployment. This includes setting up a requirements.txt file and a Procfile if necessary. These files specify the dependencies and commands needed to run your application on Heroku.
+
+- Initialize a Git Repository: If your project is not already a Git repository, initialize one by running git init in your project directory.
+
+- Login to Heroku CLI: In your terminal or command prompt, log in to Heroku CLI by running heroku login and following the prompts.
+
+- Create a New Heroku App: Run heroku create in your project directory to create a new Heroku app. This will also add a new remote to your Git repository.
+
+-  Deploy your Code: Push your code to the Heroku remote repository by running git push heroku master. This will deploy your application to Heroku.
+
+- Scale your App (Optional): You may need to scale your application's dynos (containers) to ensure it can handle incoming traffic. You can do this using the Heroku CLI or through the Heroku dashboard.
+
+- Set Config Variables (Optional): If your application requires environment variables, you can set them using the Heroku CLI or through the Heroku dashboard.
+
+- Monitor your App: Once deployed, monitor your application's logs and performance through the Heroku dashboard or CLI.
+
+- Test your App: After deployment, thoroughly test your application to ensure it's functioning correctly in the Heroku environment.
+
+
+# To fork the repository on GitHub
+
+-  Log in to GitHub: If you haven't already, log in to your GitHub account.
+
+-  Navigate to the Repository: Go to the repository you want to fork by entering its URL in your browser or by searching for it on GitHub.
+
+- Fork the Repository: On the repository page, you'll see a button labeled "Fork" in the top right corner of the page. Click on this button.
+
+- Choose Location: GitHub will prompt you to choose where you want to fork the repository. Select your own GitHub account or any organization you have access to.
+
+-  Wait for Forking to Complete: GitHub will create a copy of the repository in your account. Depending on the size of the repository, this process may take a few moments.
+
+- Clone Forked Repository (Optional): If you want to work on the forked repository locally, you can clone it to your computer using Git. To do this, copy the URL of the forked repository and use the git clone command in your terminal or Git client.
+
+-Make Changes (Optional): Once you have the forked repository cloned to your computer, you can make changes to the code as needed.
+
+- Commit Changes: After making changes, commit them to your local repository using git commit.
+
+- Push Changes: Push the changes from your local repository to your forked repository on GitHub using git push.
+
+- Create Pull Request (Optional): If you want to contribute your changes back to the original repository, you can create a pull request from your forked repository on GitHub. This allows the owner of the original repository to review your changes and potentially merge them into the main branch.
+
+<details>
+<summary> fork the repository </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+# To create a local clone of a project
+
+1. Get the Repository URL:
+
+- Follow the same steps as before to copy the repository URL from GitHub.
+
+2 .Clone the Repository:
+
+- Open VS Code on your local machine.
+- Open the Command Palette by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
+- Type "Git: Clone" and press Enter.
+- Paste the copied repository URL and press Enter.
+- Choose the directory where you want to clone the repository and press Enter.
+
+3. Install Requirements:
+
+- After cloning the repository, open a terminal in VS Code.
+ - Navigate into the cloned directory.
+  - Run the command pip3 install -r requirements.txt to install the required dependencies.
+
+4 . Set up Environment Variables:
+
+- Follow the same steps as before to create an env.py file in the root directory of the project.
+-  Add the required environment variables to the env.py file as shown before.
+
+5. Migration and Server Setup:
+
+- Open a terminal in VS Code and navigate into the project directory.
+-  Run the migration commands:
+
+   - python3 manage.py migrate
+    - python3 manage.py runserver
+- Optionally, if needed, create a superuser using:
+
+  - python3 manage.py createsuperuser
+
+  <details>
+<summary> local clone </summary>
+
+![](readme-images/responsiv.png)
+
+
+</details>
+
+
+# Credits
+
+### Content
+Readmes to follow: https://github.com/lucia2007/tennis_buddies?tab=readme-ov-file.
+
+- Parts of the code
+
+    - [youtube ](https://www.youtube.com/watch?v=-9dhCQ7FdD0&list=PL_6Ho1hjJirn8WbY4xfVUAlcn51E4cSbY).
+
+
+     - [youtube ](https://www.youtube.com/watch?v=TuXFAl8aMvc).
+
+    - [youtube ](https://www.youtube.com/watch?v=t10QcFx7d5k).
+
+ - Heroku postSQL
+
+   - [youtube ](https://www.youtube.com/watch?v=2OHc5EqfX5g&t=928s).
+
+ - Secret Key
+
+   - [youtube ](https://www.youtube.com/watch?v=BuOlpKA2cNs).
+
+
+
+# Acknowledgements
+
+This website stands as the culmination of my efforts during the Portfolio 4  Project for the Full Stack Software Developer (e-Commerce) Diploma at the Code Institute. I extend my heartfelt gratitude to my mentor, Precious Ijege, the invaluable Slack community, and everyone at the Code Institute for their unwavering assistance and support throughout this journey. While Wawas Woods is a fictitious entity, its presence is tangible in every aspect except for the business title. At present, it is more than just a project – it is a passion!
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
