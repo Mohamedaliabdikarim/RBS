@@ -84,7 +84,7 @@ I paid close attention to detail, focusing on features like simple reservation s
 
 With each improvement, I kept the goal of providing top-notch service at the forefront. My restaurant's website became more than just a tool; it became a reflection of our commitment to delivering a memorable dining experience, whether online or in-person.
 
-The wireframes encompass desktop, tablet, and mobile views with responsiveness in mind. Most basic pages maintain consistency across all devices (such as sign-in, sign-up, logout, forms, etc.). However, for those with varying layouts on smaller screens, I developed sample wireframes. The primary distinction on smaller screens is a condensed NavBar, accessed through a hamburger icon, and a footer where items stack vertically. Additionally, the display of tennis buddies and other pertinent features adjusts based on screen size.
+The wireframes encompass desktop, tablet, and mobile views with responsiveness in mind. Most basic pages maintain consistency across all devices (such as sign-in, sign-up, logout, forms, etc.). However, for those with varying layouts on smaller screens, I developed sample wireframes. The primary distinction on smaller screens is a condensed NavBar, accessed through a hamburger icon, and a footer where items stack vertically. .
 
 [Figma](https://www.figma.com) proved invaluable for crafting these wireframes.
 
@@ -175,7 +175,7 @@ Initially, I intended to modify the default font type provided. However, after e
 ## Features
 
 #### Responsive Navigation Bar
-![](readme-images/responsiv.png)
+![](readme-images/respon-nav.png)
 
 The site features a straightforward yet efficient NavBar that facilitates user navigation. It includes the following links:
 
@@ -190,38 +190,107 @@ The site features a straightforward yet efficient NavBar that facilitates user n
 - logout
 
 
-![](readme-images/responsiv.png)
+![](readme-images/Hamburger-cl.png)
 
 <details>
 <summary> Hamburger Open </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/Hamburger-open.png)
 
 
 </details>
 
-## Home Page'
+## Home Page
+<details>
+<summary> Home </summary>
+
+![](readme-images/Home.png)
+
+
+</details>
 
 ## Menu
+<details>
+<summary> Menu </summary>
+
+![](readme-images/Menu.png)
+
+
+</details>
+
 
 ### sign Up
+<details>
+<summary> Sign Up</summary>
+
+![](readme-images/sign up.png)
+
+
+</details>
 
 ### login
+<details>
+<summary> Login </summary>
+
+![](readme-images/login.png)
+
+
+</details>
 
 ### Profile
+<details>
+<summary> Profile</summary>
+
+![](readme-images/Profile.png)
+
+
+</details>
 
 ### add review
+<details>
+<summary> Review </summary>
+
+![](readme-images/review.pngg)
+
+
+</details>
 
 ### Make A reservation
+<details>
+<summary> Make A reservation </summary>
 
-### logout
+![](readme-images/reserv.png)
+
+
+</details>
 
 ### Reservation Details
+<details>
+<summary> Reservation Details </summary>
+
+![](readme-images/Details.png)
+
+
+</details>
+
 
 ### Update Reservation
+<details>
+<summary>Update </summary>
 
+![](readme-images/Update.pngg)
+
+
+</details>
 
 ### Delete
+<details>
+<summary> Delete </summary>
+
+![](readme-images/delete.png)
+
+
+</details>
 
 
 # Technologies Used
@@ -285,7 +354,7 @@ Once Django and its accompanying libraries are installed, the next step is to cr
 <details>
 <summary>  requirements.txt file </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/requirements.png)
 
 
 </details>
@@ -297,7 +366,7 @@ Create the project.
 <details>
 <summary>  Create Project </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/Create the project..png)
 
 
 </details>
@@ -307,7 +376,7 @@ When the project is created, we create the application.
 <details>
 <summary>  Create Application </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/create-app.png)
 
 
 </details>
@@ -322,7 +391,17 @@ We now need to add the application to settings.py
 <details>
 <summary> Add Application to settings.py </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/settingspart1.png)
+
+![](readme-images/settingspart2.png)
+
+![](readme-images/settingspart3.png)
+
+![](readme-images/settingspart4.png)
+
+![](readme-images/settingspart5.png)
+
+
 
 
 </details>
@@ -349,7 +428,7 @@ Add Cloudinary Libraries to the "INSTALLED_APPS" in the following order (the ord
 <details>
 <summary> Add Application to settings.py </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/add.settiings.png)
 
 
 </details>
@@ -424,7 +503,7 @@ To deploy the project to Heroku, please follow these steps:
 <details>
 <summary> fork the repository </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/fork.png)
 
 
 </details>
@@ -468,7 +547,7 @@ To deploy the project to Heroku, please follow these steps:
   <details>
 <summary> local clone </summary>
 
-![](readme-images/responsiv.png)
+![](readme-images/clone.png)
 
 
 </details>
@@ -495,6 +574,11 @@ Readmes to follow: https://github.com/lucia2007/tennis_buddies?tab=readme-ov-fil
  - Secret Key
 
    - [youtube ](https://www.youtube.com/watch?v=BuOlpKA2cNs).
+
+   ## Media
+   - [google ](https://www.google.com/search?q=restaurant+-boutique-header-bg-jpy&sca_esv=ac096cdb2ad9c657&sca_upv=1&udm=2&biw=1365&bih=666&ei=u8hBZrbYO72HwPAPpsK6wAM&ved=0ahUKEwj2odnJlIqGAxW9AxAIHSahDjgQ4dUDCA8&uact=5&oq=restaurant+-boutique-header-bg-jpy&gs_lp=Egxnd3Mtd2l6LXNlcnAiInJlc3RhdXJhbnQgLWJvdXRpcXVlLWhlYWRlci1iZy1qcHlI-29Qhx9YkFxwAXgAkAEAmAE3oAHNA6oBATm4AQPIAQD4AQGYAgCgAgCYAwCIBgGSBwCgB5UD&sclient=gws-wiz-serp#vhid=g_CUYDxHfUlXnM&vssid=mosaic). - bakcground image
+
+
 
 
 
